@@ -1,9 +1,39 @@
 html {
 	scroll-behavior: smooth;
+
 }
 
 body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
     font-family: var(--font-main);
+	font-size: 17px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.page-section{
+	min-height: 100vh;
+	background-image: url('./../../images/page-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+	padding: 74px 0 50px;
+}
+
+.title{
+	font-size: 44px;
+	line-height: 53px;
+	padding-left: 25px;
+	margin-bottom: 55px;
+}
+
+.scroll__btn{
+	padding-top: 13px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
 }

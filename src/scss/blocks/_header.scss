@@ -1,10 +1,56 @@
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
-
-	&__row {
+	position: fixed;
+	left: 0;
+	top: 30px;
+	right: 0;
+	z-index: 5;
+	&__inner{
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		justify-content: space-between;
+		min-height: 30px;
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 17px;
+		font-weight: 500;
 	}
+
+	&__btn{
+		color: #fff;
+		background-color: transparent;
+		padding: 6px 28px;
+		border: solid #fff 1px;
+		border-radius: 3px;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all .3s;
+
+		&:hover{
+			color: #000;
+			background: #fff;
+		}
+	}
+
+	&__phone{
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+
+
+.menu{
+	&__list{
+		display: flex;
+		gap: 20px;
+	}
+
+	&__list-item{
+		display: inline-block;
+	}
+}
+
+.header__info{
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }

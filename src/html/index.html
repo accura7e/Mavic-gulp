@@ -49,28 +49,31 @@
   </header>
 
   <section class="page-section top">
-    <div class="container">
-      <div class="top__inner">
-        <h1 class="top__title">Mavic 2 Pro</h1>
-        <img src="./images/mavic.png" alt="" />
-        <p class="top__text">
-          Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad
-        </p>
-        <ul class="top__social-list">
-          <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/facebook.svg" alt=""></a>
-          </li>
-          <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/youtube.svg" alt=""></a>
-          </li>
-          <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/instagram.svg" alt=""></a>
-          </li>
-        </ul>
+    <div class="page-section__wrapper top__wrapper">
+      <div class="container">
+        <div class="top__inner">
+          <h1 class="top__title">Mavic 2 Pro</h1>
+          <img src="./images/mavic.png" alt="" />
+          <p class="top__text">
+            Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad
+          </p>
+          <ul class="top__social-list">
+            <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/facebook.svg"
+                  alt=""></a>
+            </li>
+            <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/youtube.svg" alt=""></a>
+            </li>
+            <li class="top__social-item"><a href="" class="top__social-link"><img src="./images/instagram.svg"
+                  alt=""></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="scroll__btn">
-      <a href="#products">
-        <img src="./images/arrow-down.svg" alt="" />
-      </a>
-    </div>
+      <div class="scroll__btn">
+        <a href="#products">
+          <img src="./images/arrow-down.svg" alt="" />
+        </a>
+      </div>
   </section>
 
 
@@ -80,6 +83,7 @@
 
 
   <section id="products" class="page-section products">
+    <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
       <div class="products__inner">
@@ -96,41 +100,57 @@
         <div class="products__slider-box">
           <p class="products__slider-text">Лучшая беспилотная
             технология аэросъемки</p>
+
           <div class="products__slider">
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
+              </div>
+
+              
             </div>
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
-            </div>
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
-            </div>
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
-            </div>
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
-            </div>
-            <div class="products__slider-item">
-              <img class="products__slider-img" src="./images/slider-1.jpg" alt="">
+              
+            <div class="products__btns">
+              <button class="products__btn-prev">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.21839 1L1 9L9.21839 17" stroke="white"/>
+                  </svg>
+                  
+              </button>
+              <button class="products__btn-next">
+                
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 17L9 9L1 1" stroke="white"/>
+                  </svg>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
 
 
-
-    <div class="scroll__btn">
-      <a href="#benefits">
-        <img src="./images/arrow-down.svg" alt="" />
-      </a>
+      <div class="scroll__btn">
+        <a href="#benefits">
+          <img src="./images/arrow-down.svg" alt="" />
+        </a>
+      </div>
     </div>
+  </div>
   </section>
 
   <section id="benefits" class="page-section benefits">
+    <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title">Преимущества</h3>
 
@@ -224,9 +244,11 @@
         <img src="./images/arrow-down.svg" alt="" />
       </a>
     </div>
+  </div>
   </section>
 
   <section id="specification" class="page-section specification">
+    <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title ">Характеристики</h3>
       <div class="specification__inner">
@@ -269,9 +291,11 @@
         <img src="./images/arrow-down.svg" alt="" />
       </a>
     </div>
+  </div>
   </section>
 
   <section id="questions" class="page-section questions">
+    <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title">Остались вопросы?</h3>
       <div class="quistions__items">
@@ -309,9 +333,11 @@
         <img src="./images/arrow-down.svg" alt="" />
       </a>
     </div>
+  </div>
   </section>
 
   <section id="contacts" class="page-section contacts">
+    <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title">Контакты</h3>
       <div class="contacts__inner">
@@ -345,14 +371,18 @@
           </form>
         </div>
         <ul class="contacts__social-list">
-          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/facebook.svg" alt=""></a>
+          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/facebook.svg"
+                alt=""></a>
           </li>
-          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/youtube.svg" alt=""></a>
+          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/youtube.svg"
+                alt=""></a>
           </li>
-          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/instagram.svg" alt=""></a>
+          <li class="contacts__social-item"><a href="" class="contacts__social-link"><img src="./images/instagram.svg"
+                alt=""></a>
           </li>
         </ul>
       </div>
+    </div>
     </div>
   </section>
 

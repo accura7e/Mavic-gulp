@@ -1,2 +1,3 @@
 import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+import productsSlider from './modules/swiper.js';
+productsSlider();

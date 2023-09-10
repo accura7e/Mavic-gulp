@@ -21,24 +21,65 @@
     display: flex;
    &:nth-child(even){
     margin-left: 50px;
+    transform: translateY(25px);
    }
+   &:nth-child(3){
+    margin-left: 30px;
+   }
+   &:nth-child(4){
+    margin-left: 60px;
+   }
+
     
-}
-.benefits__item-first{
-    position: relative;
-    &::after{
-        content: '';
-        position: absolute;
-        height: 48px;
-        width: 245px;
-        background-image: url('./../images/line-1.svg');
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        right: -65px;
-        top: 38px;
+    &:first-child,
+    &:nth-child(3){
+        position: relative;
+        &::after,
+        &::before{
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
     }
 
+    &:first-child{
+        &::after{
+            height: 48px;
+            width: 245px;
+            background-image: url('./../images/line-1.svg');
+
+            right: -65px;
+            top: 38px;
+        }
+
+    }
+
+    &:nth-child(3){
+        &::before{
+            width: 254px;
+            height: 42px;
+            background-image: url('./../images/line-3.svg');
+
+            right: -65px;
+            top: 25px;
+        }
+        &::after{
+            width: 463px;
+            height: 62px;
+            background-image: url('./../images/line-2.svg');
+
+            right: -65px;
+            bottom: 250px;
+        }
+    }
+
+    
 }
+
+
+
+
 .benefits__num {
     font-size: 36px;
     margin-right: 10px;

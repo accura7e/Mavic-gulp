@@ -1,0 +1,41 @@
+.page-section {
+}
+.questions {
+}
+.page-section__wrapper {
+}
+.container {
+}
+.title {
+}
+.quistions__items {
+max-width: 757px;
+    display: grid;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+.questions__item {
+    
+    background: rgba(0, 0, 0, 0.30);
+    max-width: 690px;
+}
+.questions__item-title {
+   
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 132.135%; /* 27.748px */
+    padding: 20px 10px 24px 40px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    
+}
+.questions__item-text {
+   
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 150%; /* 22.5px */
+}
+.scroll__btn {
+}

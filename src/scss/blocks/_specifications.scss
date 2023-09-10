@@ -1,0 +1,124 @@
+.page-section {
+}
+.specification {
+}
+.page-section__wrapper {
+}
+.container {
+}
+.title {
+}
+.specification__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.specification__item {
+    &:first-child{
+        .specification__box{
+            &:first-child::before{
+                background-image: url('./../images/pointer-1.svg');
+                width: 229px;
+                height: 116px;
+                right: -140px;
+                top: 16px;
+            }
+        }
+
+        .specification__box{
+            &:last-child::before{
+                background-image: url('./../images/pointer-2.svg');
+                width: 346px;
+                height: 92px;
+                right: -315px;
+                top: -65px;
+            }
+        }
+
+        
+
+        
+    }
+
+    &:last-child{
+        .specification__box{
+            &:first-child::before{
+                background-image: url('./../images/pointer-3.svg');
+                width: 258px;
+                height: 104px;
+                left: -287px;
+                top: 10px;
+            }
+        }
+
+        .specification__box{
+
+            &:last-child{
+                transform: translateY(20px);
+            }
+
+            &:last-child::before{
+                background-image: url('./../images/pointer-4.svg');
+                width: 130px;
+                height: 90px;
+                left: -140px;
+                top: -80px;
+            }
+        }
+
+        
+
+        
+    }
+
+
+
+    
+}
+.specification__box {
+    max-width: 280px;
+    position: relative;
+    margin-top: 10px;
+    &:first-child::before,
+    &:nth-child(2)::before,
+    &:nth-child(3)::before,
+    &:last-child::before{
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    &:nth-child(2){
+        margin-top: 140px;
+    }
+    &:nth-child(3){
+        margin-top: 140px;
+    }
+    &:last-child{
+        margin-top: 140px;
+    }
+
+    
+
+
+}
+.specification__box-title {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 132.135%;
+    margin-bottom: 10px;
+
+}
+.specification__box-text {
+    color: #FFF;
+
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 130%; /* 19.5px */
+}

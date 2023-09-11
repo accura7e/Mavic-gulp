@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.css" />
+  
 </head>
 
 <body>
@@ -21,6 +23,9 @@
         </a>
 
         <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__list-item">
               <a href="#" class="menu__list-link">О ДРОНЕ</a>
@@ -37,7 +42,11 @@
             <li class="menu__list-item">
               <a href="#" class="menu__list-link">КОНТАКТЫ</a>
             </li>
+            <li>
+              <a href="tel:80505676767" class="header__phone">8 (050) 567 67 67</a>
+            </li>
           </ul>
+
         </nav>
 
         <div class="header__info">
@@ -47,6 +56,8 @@
       </div>
     </div>
   </header>
+
+  <main id="fullpage"> 
 
   <section class="page-section top">
     <div class="page-section__wrapper top__wrapper">
@@ -387,18 +398,21 @@
 
       </div>
       <footer class="footer">
-          
-        <p class="footer__copy">
+          <div class="container">
+                    <p class="footer__copy">
           © DJI, 2020
         </p>
+          </div>
+
       
     </footer>
     </div>
     </div>
   </section>
 
+</main>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/index.bundle.js"></script>
 </body>
 

@@ -37,6 +37,7 @@
 		"last 5 versions"
 	],
 	"dependencies": {
+		"fullpage.js": "^4.0.20",
 		"swiper": "^10.2.0"
 	}
 }

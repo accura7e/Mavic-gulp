@@ -40,6 +40,8 @@ body {
 	}
 }
 
+
+
 .title{
 	font-size: 44px;
 	line-height: 53px;
@@ -60,4 +62,8 @@ body {
 .swiper {
 	width: 600px;
 	height: 300px;
+  }
+
+  .fp-watermark{
+	display: none !important;
   }

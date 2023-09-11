@@ -1,0 +1,124 @@
+
+.contacts {
+}
+
+
+.contacts__inner {
+    display: flex;
+
+}
+.contacts__info {
+    width: 240px;
+    margin-right: 60px;
+}
+.contacts__info-box {
+    margin-bottom: 30px;
+}
+.contacts__info-title {
+
+
+    /* h4 */
+    margin: 0 0 12px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+.contacts__info-phone,
+.contacts__info-email {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 19.5px */
+    transition: text-decoration .3s ease-in;
+}
+.contacts__info-email:hover{
+    text-decoration: underline;
+}
+.contacts__form {
+    width: 570px;
+    margin-right: 106px;
+}
+.contacts__form-title {
+    color: #FFF;
+
+/* h4 */
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-bottom: 13px;
+}
+.contacts__form-text {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    padding-bottom: 12px;
+}
+.contacts__form-line {
+    display: flex;
+    
+    gap: 10px;
+}
+.contacts__form-input {
+    opacity: 0.95;
+background: rgba(0, 0, 0, 0.50);
+    max-width: 280px;
+    padding: 15px;
+    flex-grow: 1;
+
+
+}
+.contacts__form-textarea {
+    outline: none;
+    min-height: 144px;
+    opacity: 0.95;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 15px;
+    width: 100%;
+    
+    margin-top: 10px;
+    resize: none;
+    margin-bottom: 15px;
+}
+.contacts__form-btn {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+    &:hover{
+        color: #1C1C1C;
+        background-color: #fff;
+    }
+}
+.contacts__social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+}
+.contacts__social-item {
+}
+.contacts__social-link {
+    opacity: 1;
+    transition: opacity .3s ;
+}
+.contacts__social-link:hover{
+    opacity: 0.5;
+     
+}
+.footer {
+}
+.footer__copy {
+}

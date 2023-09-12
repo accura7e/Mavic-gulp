@@ -35,6 +35,13 @@
     &__text{
         margin: 25px 0 35px;
         max-width: 325px;
+
+        @media (max-width: 540px) {
+            
+        
+            margin: 15px 0 40%;
+        
+        }
     }
 
     &__social-list{

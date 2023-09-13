@@ -47,6 +47,32 @@
 	&__list{
 		display: flex;
 		gap: 20px;
+		transition: .3s;
+
+
+		@media(max-width: 1366px){
+			overflow: auto;
+				position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			background: rgba(#1c1c1c, .9);
+			bottom: 0;
+			display: grid;
+			align-content: center;
+			z-index: -1;
+			gap: 35px;
+			padding-left: 15px;
+			transform: translateY(-100%);
+			&--active{
+				transform: translateY(0);
+			}
+
+			@media(max-height:450px){
+				gap: 15px;
+			}
+	
+		}
 	}
 
 	&__list-item{
@@ -54,9 +80,8 @@
 	}
 }
 
-.menu__list-phone{
-	display: none;
-}
+
+
 
 .menu__list-btn{
 	display: none;
@@ -66,4 +91,68 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
+}
+
+.menu__btn{
+	.menu__btn-line{
+		
+		transition: all .3s;
+	}
+
+	&::after{
+		
+		transition: all .3s;
+	}
+
+	&::before{
+		
+		transition: all .3s;
+	}
+	
+}
+
+.menu__list-phone{
+
+	@media(max-height: 375px){
+padding: 15px 0 ;
+	}
+	@media(max-width: 1366px){
+		padding-top: 33px;
+		position: relative;
+		font-size: 16px;
+		font-weight: 800;
+		line-height: 18px;
+		&::before{
+			content: '';
+			position: absolute;
+			border-top: 1px solid rgba($color: #fff, $alpha: .24);
+			left: -24px;
+			top: 0;
+			right: 0;
+
+		}
+	}
+}
+
+
+
+.menu__btn.menu__btn--active{
+	transition: all .3s;
+	.menu__btn-line{
+		opacity: 0;
+		transition: all .3s;
+	}
+
+	&::after{
+		transform: translateY(-6px) rotate(45deg);
+		width: 24px;
+		transition: all .3s;
+	}
+
+	
+	&::before{
+		transform: translateY(6px) rotate(-45deg);
+		
+		transition: all .3s;
+	}
 }

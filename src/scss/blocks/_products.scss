@@ -24,7 +24,15 @@
 .products__slider-box {
     position: relative;
     margin-top: 110px;
+
+    @media(max-width: 1366px){
+		margin-top: 0;
+        
+	}
+
 }
+
+
 .products__slider-text {
     width: 290px;
     position: absolute;
@@ -37,6 +45,20 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    @media(max-width: 1366px){
+        bottom: auto;
+        left: auto;
+        top: -105px;
+        right: 0;
+	}
+
+    @media(max-width: 1024px){
+		font-size: 22px;
+        line-height: 22px;
+        
+	}
+
 }
 .products__slider {
    
@@ -51,6 +73,7 @@
         border: 4px solid #fff;
         top: -15px;
         right: -17px;
+        
     }
     .swiper-slide{
         cursor: grab;
@@ -60,8 +83,7 @@
     }
 
 }
-.products__slider-img {
-}
+
 
 .products__btns {
     position: absolute;

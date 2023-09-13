@@ -63,6 +63,12 @@ body {
 		margin-bottom: 35px;
 	}
 
+	@media(max-width: 640px){
+        padding-left: 0;
+		font-size: 40px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
 }
 
 .scroll__btn{

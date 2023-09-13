@@ -35,6 +35,13 @@
 		font-size: 16px;
 		line-height: 18px;
 	}
+
+	@media(max-width: 1366px){
+        background-color: rgba($color: #000, $alpha: .4);
+		padding: 25px 0;
+		top: 0;
+
+	}
 }
 
 .logo__img{

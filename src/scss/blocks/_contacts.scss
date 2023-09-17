@@ -5,11 +5,19 @@
 
 .contacts__inner {
     display: flex;
-
+    @media(max-width: 1100px){
+        flex-direction: column;
+        align-items: center;
+}
 }
 .contacts__info {
-    width: 240px;
+    max-width: 240px;
     margin-right: 60px;
+    @media(max-width: 640px){
+        
+        margin-right: 0;
+
+}
 }
 .contacts__info-box {
     margin-bottom: 30px;
@@ -38,8 +46,13 @@
     text-decoration: underline;
 }
 .contacts__form {
-    width: 570px;
+    max-width: 570px;
     margin-right: 106px;
+    @media(max-width: 1100px){
+        font-size: 13px;
+        margin-right: 0;
+        
+}
 }
 .contacts__form-title {
     color: #FFF;
@@ -63,6 +76,11 @@
     display: flex;
     
     gap: 10px;
+    @media(max-width: 640px){
+        
+        flex-direction: column;
+
+}
 }
 .contacts__form-input {
     opacity: 0.95;
@@ -84,6 +102,11 @@ background: rgba(0, 0, 0, 0.50);
     margin-top: 10px;
     resize: none;
     margin-bottom: 15px;
+    @media(max-width: 640px){
+        
+     
+
+}
 }
 .contacts__form-btn {
     font-size: 14px;
@@ -101,12 +124,22 @@ background: rgba(0, 0, 0, 0.50);
         color: #1C1C1C;
         background-color: #fff;
     }
+    @media(max-width: 640px){
+        
+        margin-bottom: 10px;
+
+}
 }
 .contacts__social-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 26px;
+    @media(max-width: 640px){
+        
+        flex-direction: row;
+
+}
 }
 .contacts__social-item {
 }
